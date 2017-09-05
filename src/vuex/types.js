@@ -2,3 +2,4 @@
 export const GET_TOPICS_LIST = 'GET_TOPICS_LIST'  //    主题列表
 export const GET_USER_DATA = 'GET_USER_DATA'  //    用户登录
 export const GET_USER_DETAIL = 'GET_USER_DETAIL'  //    用户详情
+export const PUBLISH_TOPICS = 'PUBLISH_TOPICS'  //    发布文章(主题)

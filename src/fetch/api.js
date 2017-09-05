@@ -57,4 +57,7 @@ export default{
   user (name) {
     return fetch('/user/' + name, {}, 'get')
   }
+  // publish (token, title, tab, content) {
+  //   return fetch('/topics', {accesstoken: token, title: title, tab: tab, content: content}, 'post')          传参数的时候报title为空，不知道为什么，所以直接在页面请求
+  // }
 }

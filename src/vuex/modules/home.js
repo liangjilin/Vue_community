@@ -24,7 +24,7 @@ const mutations = {
   },
   [types.GET_TOPICS_LIST] (state, res) {
     state.topics_list_state = res.data
-    console.log(state.topics_list_state)
+    // console.log(state.topics_list_state)
   }
 }
 

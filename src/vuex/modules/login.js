@@ -32,11 +32,10 @@ const actions = {
 const mutations = {
   [types.GET_USER_DATA] (state, res) {
     state.userData_state = res
-    console.log(state.userData_state)
+    // console.log(state.userData_state)
   },
   [types.GET_USER_DETAIL] (state, res) {
     state.userDetail_state = res.data
-    console.log(state.userDetail_state)
   }
 }
 

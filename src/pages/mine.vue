@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="bgDiv"></div>
-      <mu-list class="mine-list">
+      <mu-list class="mine-list" v-if="userDetail.recent_topics">
         <mu-list-item :title="'最近主题(' + userDetail.recent_topics.length + ')'" inset toggleNested :open="false">
           <mu-icon class="icon" slot="left" value="insert_drive_file" />
           <mu-list-item v-for="item in userDetail.recent_topics" :key="item.id" :title="item.title" slot="nested">
