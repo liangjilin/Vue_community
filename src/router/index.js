@@ -5,6 +5,7 @@ import Publish from '@/pages/publish'
 import Message from '@/pages/message'
 import Mine from '@/pages/mine'
 import Login from '@/pages/login'
+import Detail from '@/pages/detail'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/detail',
+      name: 'detail',
+      component: Detail
     }
   ]
 })

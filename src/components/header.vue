@@ -2,6 +2,7 @@
   <mu-appbar :title=title>
     <mu-icon-button icon="back" slot="left">
       <slot name="logo"></slot>
+      <slot name="backBtn"></slot>
     </mu-icon-button>
     <mu-icon-menu icon="more_vert" slot="right" v-if="title === 'Vue.js中文社区'">
       <a>

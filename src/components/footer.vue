@@ -69,6 +69,9 @@
         if (this.$route.path.split('/')[1] === '') {        //     publish页面中--点击取消跳转到home页面，响应的要到首页home导航栏去
           this.bottomNav = '首页'
         }
+        if (this.$route.path.split('/')[1] === 'mine') {        //   我的点击主题或者回复跳到detail页面后，返回，触发我的选项卡高亮
+          this.bottomNav = '我的'
+        }
       }
     }
   }

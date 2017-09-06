@@ -333,3 +333,17 @@ input[type=button] {
    (commented out as usage is rare, and the filter syntax messes with some pre-processors)
 .ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
 */
+/*detail*/
+.mu-dialog-wrapper .mu-dialog-body{
+  font-size: 14px;
+  color: #666;
+  font-weight: 600;
+}
+.mu-dialog-wrapper .detailBtn{
+  width: 49%;
+  background-color: #009688;
+  color: #fff;
+}
+.mu-dialog-wrapper .detailBtn:first-child{
+  margin-right: 2%;
+}

@@ -1,6 +1,6 @@
 <template>
     <ul class="list">
-      <router-link tag="li" to="" v-for="item in topics_list" :key="item.id">
+      <router-link tag="li" :to="{path: 'detail', query: {id: item.id, title: item.title}}" v-for="item in topics_list" :key="item.id">
         <!--<router-link to="" tag="img" src="../assets/img/vue.png"></router-link>-->
         <img :src="item.author.avatar_url" alt="">
         <div class="li-rt">

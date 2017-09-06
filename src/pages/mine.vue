@@ -14,19 +14,19 @@
       <mu-list class="mine-list" v-if="userDetail.recent_topics">
         <mu-list-item :title="'最近主题(' + userDetail.recent_topics.length + ')'" inset toggleNested :open="false">
           <mu-icon class="icon" slot="left" value="insert_drive_file" />
-          <mu-list-item v-for="item in userDetail.recent_topics" :key="item.id" :title="item.title" slot="nested">
+          <mu-list-item v-for="item in userDetail.recent_topics" :to="{path:'/detail',query:{id:item.id, title: item.title}}" :key="item.id" :title="item.title" slot="nested">
             <mu-icon class="icon" slot="left" value="insert_comment" />
           </mu-list-item>
         </mu-list-item>
         <mu-list-item :title="'最近回复(' + userDetail.recent_replies.length + ')'" inset toggleNested :open="false">
           <mu-icon class="icon" slot="left" value="drafts" />
-          <mu-list-item v-for="item in userDetail.recent_replies" :key="item.id" :title="item.title" slot="nested">
+          <mu-list-item v-for="item in userDetail.recent_replies" :to="{path:'/detail',query:{id:item.id, title: item.title}}" :key="item.id" :title="item.title" slot="nested">
             <mu-icon class="icon" slot="left" value="insert_comment" />
           </mu-list-item>
         </mu-list-item>
         <mu-list-item :title="'收藏主题(' + userDetail.collect_topics.length + ')'" inset toggleNested :open="false">
           <mu-icon class="icon" slot="left" value="folder" />
-          <mu-list-item v-for="item in userDetail.collect_topics" :key="item.id" :title="item.title" slot="nested">
+          <mu-list-item v-for="item in userDetail.collect_topics" :to="{path:'/detail',query:{id:item.id, title: item.title}}" :key="item.id" :title="item.title" slot="nested">
             <mu-icon class="icon" slot="left" value="insert_comment" />
           </mu-list-item>
         </mu-list-item>
