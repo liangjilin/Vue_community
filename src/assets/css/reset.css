@@ -347,3 +347,9 @@ input[type=button] {
 .mu-dialog-wrapper .detailBtn:first-child{
   margin-right: 2%;
 }
+/*消息*/
+.content-msg p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
