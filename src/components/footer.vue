@@ -72,6 +72,9 @@
         if (this.$route.path.split('/')[1] === 'mine') {        //   我的点击主题或者回复跳到detail页面后，返回，触发我的选项卡高亮
           this.bottomNav = '我的'
         }
+        if (this.$route.path.split('/')[1] === 'message') {        //   我的点击主题或者回复跳到detail页面后，返回，触发我的选项卡高亮
+          this.bottomNav = '消息'
+        }
       }
     }
   }

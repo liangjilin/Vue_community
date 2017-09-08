@@ -54,6 +54,9 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  #app
+    display flex
+    height 100vh
   .back-btn
     position absolute
     top 0

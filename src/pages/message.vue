@@ -54,6 +54,7 @@
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "../assets/css/common.styl"
   .container
+    width 100%
     margin-top pxTorem(104)
     .tabs
       .mu-tab-link

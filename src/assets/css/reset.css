@@ -16,8 +16,8 @@ body {
   font-family: "Microsoft YaHei", -apple-system-font, "黑体", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   //-webkit-user-select: none;
   -webkit-user-drag: none;
+  overflow: visible!important;
 }
-
 html,
 body,
 body div,
@@ -352,4 +352,11 @@ input[type=button] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+/*刷新时加载中的样式*/
+.mu-infinite-scroll{
+  padding: 10px 0;
+}
+.mu-infinite-scroll .mu-circle-spinner {
+  border-color: #009688;
 }

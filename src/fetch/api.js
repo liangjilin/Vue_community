@@ -48,8 +48,8 @@ export function fetch (url, params, method) {
 }
 
 export default{
-  topicsList (tabName) {
-    return fetch('/topics?tab=' + tabName, {page: 1}, 'get')
+  topicsList (tabName, page) {
+    return fetch('/topics?tab=' + tabName, {page: page}, 'get')
   },
   login (token) {
     return fetch('/accesstoken', {accesstoken: token}, 'post')
