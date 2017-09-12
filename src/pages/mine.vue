@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="mine">
-        <div>
+        <div v-if="userDetail">
           <img :src="userDetail.avatar_url" alt="">
           <div class="userInfo">
             <h3 class="userName">{{userDetail.loginname}}</h3>

@@ -13,9 +13,10 @@
   @import "../assets/css/common.styl"
   .footer
     width 100%
-    position fixed
+    position absolute
     bottom 0
     left 0
+    z-index 1000
     .mu-bottom-nav
       height pxTorem(56)
       background-color #fff

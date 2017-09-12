@@ -68,6 +68,7 @@
   @import "../assets/css/common.styl"
   .detail
     margin-top pxTorem(56)
+    overflow-x hidden
     .detail_header
       padding pxTorem(12)
       h3
