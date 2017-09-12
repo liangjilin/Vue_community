@@ -1,6 +1,6 @@
 <template>
   <mu-appbar :title=title>
-    <mu-icon-button icon="back" slot="left">
+    <mu-icon-button icon="back" class="back" slot="left">
       <slot name="logo"></slot>
       <slot name="backBtn"></slot>
     </mu-icon-button>

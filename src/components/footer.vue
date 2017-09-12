@@ -13,7 +13,7 @@
   @import "../assets/css/common.styl"
   .footer
     width 100%
-    position absolute
+    position fixed
     bottom 0
     left 0
     z-index 1000

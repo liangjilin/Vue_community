@@ -10,9 +10,10 @@
     <script src="./static/js/flexible.debug.js"></script>
     <title>VueCommunity</title>
   </head>
-  <body>
+  <body onresize="footerHide()">
     <div id="app"></div>
-    <!--<script type="text/javascript" src="cordova.js"></script>          打包APK時需要-->
-    <!-- built files will be auto injected -->
+    <!--打包的時候需要cordova-->
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <script type="text/javascript" src="./static/js/hideFooter.js"></script>
   </body>
 </html>
