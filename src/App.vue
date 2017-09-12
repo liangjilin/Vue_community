@@ -11,7 +11,7 @@
 
 <script>
   import './assets/css/reset.css'
-  import './assets/css/font-face.css'
+//  import './assets/css/font-face.css'
   import './assets/css/font-icon.css'
   import header from './components/header.vue'
   import footer from './components/footer.vue'

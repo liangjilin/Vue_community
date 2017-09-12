@@ -54,7 +54,7 @@ export default {
     .right
       width 1.28rem
   .mu-appbar
-    background-color #39716a
+    background-color #39716a!important
     .mu-appbar-title
       text-align center
   .mu-popover
