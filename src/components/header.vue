@@ -49,6 +49,8 @@ export default {
       width pxTorem(48)
       height pxTorem(48)
       padding pxTorem(12)
+      img
+        width pxTorem(26)
     .mu-appbar-title
       line-height pxTorem(56)
     .right
