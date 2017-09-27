@@ -61,17 +61,7 @@
 ## 打包
 
 >需要先修改build文件夹里的webpack.base.conf.js的publicPath: './'
->npm run build
->打包成功后还有改一下index.html引入的flexible和flexible_css这两个js路径，改为去掉.static即可
-
-## 打包成APK
-
->先全局安装下cordova---> npm install -g cordova (在此之前，一定要把环境搭好，也就是sdk，jdk那些环境变量)
->然后
 ```javascript
-     cordova create myApp org.apache.cordova.myApp myApp        //  创建项目
-     cd myApp     进入根目录路径
-     cordova platform add android        添加android
 ```
 > 项目的index.html引入cordova.js <script type="text/javascript" src="cordova.js"></script>
 ```javascript
@@ -94,12 +84,25 @@
       window.navigator.splashscreen.hide()
   }, false);
 ```
->修改build
+>修改config文件夹下面index.js的build
 ```javascript
     assetsSubDirectory: '',
     assetsPublicPath: '',
 ```
->在vue项目中npm run build,完了之后记得修改一下index.html引入的flexible和flexible_css这两个js路径，改为去掉.static即可
+>在vue项目中npm run build,完了之后记得修改一下index.html引入的flexible和flexible_css这两个js路径，改为去掉./static/即可
+>npm run build
+```javascript
+```
+
+## 打包成APK
+
+>先全局安装下cordova---> npm install -g cordova (在此之前，一定要把环境搭好，也就是sdk，jdk那些环境变量)
+>然后
+```javascript
+     cordova create myApp org.apache.cordova.myApp myApp        //  创建项目
+     cd myApp     进入根目录路径
+     cordova platform add android        添加android
+```
 >最后在你的cmd 中cordova build android就行了，然后可以拿到手机上安装了
 >
 

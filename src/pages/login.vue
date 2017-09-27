@@ -10,7 +10,7 @@
   .container
     display flex
     width 100%
-    height pxTorem(555)
+    height pxTorem(480)
     flex-direction column
     justify-content center
     align-items center
